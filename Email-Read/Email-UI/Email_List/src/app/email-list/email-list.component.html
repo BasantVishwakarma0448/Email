@@ -1,0 +1,23 @@
+<div>
+    <table class="table table-bordered table-striped table-hover font-weight-bold text-white">
+        <thead class="thead-light text-uppercase">
+            <tr>
+                <th>S.NO</th>
+                <th>SUBJECT</th>
+                <th>DATE</th>
+                <th>FROM</th>
+                <th>CONTENT</th>
+            </tr>
+        </thead>
+        <tbody *ngFor="let m of list; let i = index" class="text-primary">
+            <td>{{(form.pageNo*5)+i+1}}</td>
+            <td>{{m.subject}}</td>
+            <td>{{m.date}}</td>
+            <td>{{m.from}}</td>
+            <td>{{m.content}}</td>
+        </tbody>
+
+
+
+    </table>
+</div>
